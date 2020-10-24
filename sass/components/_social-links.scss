@@ -32,7 +32,7 @@
       &:hover,
       &:focus,
       &:active {
-        background-color: $accent-color;;
+        background-color: $accent-color;
       }
     }
     
@@ -42,6 +42,9 @@
 .footer & {
     padding-right: 0px;
   padding-left: 0px;
+}
+
+
 }
 
 .social-link-svg {
@@ -60,7 +63,5 @@
     fill: #ffffff;
   }
 
-
-}
 
 }
