@@ -3,14 +3,7 @@
   padding-bottom: 94px;
 
   &-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.167;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $main-title-color;
-  
-    margin-bottom: 50px;
+    @extend %title;
   }
   
   &-link {
@@ -21,7 +14,7 @@
     height: 90px;
     border: 1px solid $social-link-color;
     border-radius: 4px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition ($tp: border-color);
 
     &:hover,
     &:focus,
@@ -32,7 +25,7 @@
 
   &-icon {
     fill: $social-link-color;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition ($tp: fill);
 
     .clients-link:hover &,
     .clients-link:focus &,

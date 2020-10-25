@@ -2,12 +2,8 @@
   padding-top: 94px;
   padding-bottom: 94px;
 
-  &-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.143;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+  &-subtitle {
+    @extend %subtitle;
     color: $main-title-color;
 
     margin-bottom: 10px;
@@ -41,19 +37,19 @@
   &-item {
     width: 270px;
 
-    &:first-child .advantages-title::before {
+    &:first-child .advantages-subtitle::before {
       background-image: url("../images/svg/antenna.svg");
     }
 
-    &:nth-child(2) .advantages-title::before {
+    &:nth-child(2) .advantages-subtitle::before {
       background-image: url("../images/svg/clock.svg");
     }
 
-    &:nth-child(3) .advantages-title::before {
+    &:nth-child(3) .advantages-subtitle::before {
       background-image: url("../images/svg/diagram.svg");
     }
 
-    &:last-child .advantages-title::before {
+    &:last-child .advantages-subtitle::before {
       background-image: url("../images/svg/astronaut.svg");
     }
   }

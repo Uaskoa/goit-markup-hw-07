@@ -2,25 +2,13 @@
   padding-bottom: 94px;
 
   &-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.167;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $main-title-color;
-
-    margin-bottom: 50px;
+    @extend %title;
   }
 
   &-subtitle {
-    font-family: $main-font;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.143;
+    @extend %subtitle;
     text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-
+   
     color: #ffffff;
   }
 
